@@ -31,10 +31,6 @@
 | 14     | 1         | 1        | 1                  | 0                  | 14             | 15             | 4            | X            |         |               |
 | 15     | 1         | 1        | 1                  | 1                  | 15             | 15             | 13           | 14           |         |               |
 
-I left X's on states that shouldn't happen, they could all probably be zeroes. I don't think state 12 in general should happen, arms should always raise when last train departs.
-I assumed approach always triggered present & alarm, and that present & alarm always transitioned to arm down. Going the other way, last depart always triggers arm up. I changed the "ringing" column to timer like the lab instructions mentioned. I think that only affects state 4, that's like the alarm cooldown and then resets back to zero. I don't think this really works without a
-train count variable like in the fsm diagram anyway. Also I realized we were supposed to put the invariants in the second table, I don't think it really matters tho
+We left X's on states that shouldn't happen, they could all probably be zeroes. I don't think state 12 in general should happen, arms should always raise when last train departs.
+We assumed approach always triggered present & alarm, and that present & alarm always transitioned to arm down. Going the other way, last depart always triggers arm up. I changed the "ringing" column to timer like the lab instructions mentioned. I think that only affects state 4, that's like the alarm cooldown and then resets back to zero.
 
-| number | invariant |
-|--------|-----------|
-| 16     |           |
